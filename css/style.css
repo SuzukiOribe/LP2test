@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+  scroll-padding-top: 100px;
+  /* スクロールさせる表示領域の縦軸の基準値 */
+  scroll-behavior: smooth;
+  /* 該当箇所へのスクロールを指定smooth=定義された速度でスムーズに */
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  word-break: break-all;
+  background-color: #fff;
+  color: #666666;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+li {
+  list-style: none;
+}
+
+.header-wrap {
+  position: fixed;
+  width: 100%;
+  height: 92.5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.header-wrap__logo {
+  padding-left: 15%;
+}
+
+.header-wrap__logo a {
+  display: flex;
+  align-items: center;
+  /* line-height: 1.25; */
+}
+
+.header-wrap__logo a img {
+  display: block;
+  width: 50%;
+  height: 50%;
+}
+
+.header-wrap__logo a p {
+  color: #00213B;
+  font-size: clamp(0.5rem, 0.409rem + 0.45vw, 0.75rem);
+  line-height: 1;
+  margin-left: 10px;
+}
+/* clamp関数はウインドウサイズに対応してフォントサイズを調整できる関数 */
+
+.header-wrap__nav {
+  margin-right: 400px;
+}
+
+.header-wrap__nav a {
+  color: #fff;
+}
+
+.header-wrap__nav__web {
+  background-color: #E99BC1;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.75vw 5vw;
+  border-radius: 10px;
+}
+
+.header-wrap__nav__web a p {
+  line-height: 1.5;
+  font-size: clamp(0.85rem, 0.795rem + 0.27vw, 1rem);
+  color: #fff;
+}
+
+.h-open {
+  position: absolute;
+  z-index: 9999;
+  right: 0;
+  cursor: pointer;
+  width: 92.5px;
+  height: 100%;
+  background-color: #ECBBB5;
+  text-align: center;
+}
+
+.h-open small {
+  display: inline-block;
+  position: relative;
+  color: #00213B;
+  font-size: 0.5rem;
+  top: 10px;
+}
+
+/* ×に変化させる */
+.h-open span {
+  display: inline-block;
+  transition: all 0.4s;
+  position: absolute;
+  left: 24px;
+  height: 1.5px;
+  border-radius: 2px;
+  background-color: #00213B;
+  width: 50%;
+}
+
+.h-open span:nth-of-type(1) {
+  top: 40px;
+}
+
+.h-open span:nth-of-type(2) {
+  top: 55px;
+}
+
+.h-open span:nth-of-type(3) {
+  top: 70px;
+}
+
+/* activeでクリックされた後に表示される2本線のデザインを適用させる */
+.h-open.active span:nth-of-type(1) {
+  top: 48px;
+  left: 24px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 50%;
+}
+
+.h-open.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.h-open.active span:nth-of-type(3) {
+  top: 60px;
+  left: 24px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 50%;
+}
+
+/* クリックされた後に表示されるメニューのデザインを適用させる */
+#h-nav {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: -120%;
+  width: 50%;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: 0px 10px 10px rgb(0 0 0 / 20%);
+  transition: all 0.6s;
+}
+
+#h-nav ul {
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+#h-nav li {
+  position: relative;
+  border-bottom: solid 1.5px #E99BC1;
+  margin: 22.5% 0;
+}
+
+#h-nav li::after {
+  position: absolute;
+  content: "";
+  left: -15px;
+  bottom: 0;
+  height: 100%;
+  width: 3.75px;
+  background-color: #E99BC1;
+}
+
+#h-nav li a {
+  color: #333;
+  display: block;
+  font-size: clamp(0.9rem, 0.773rem + 0.64vw, 1.25rem);
+  font-weight: 400;
+}
+
+#h-nav.panelactive {
+  right: 0;
+}
