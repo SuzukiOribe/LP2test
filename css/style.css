@@ -271,14 +271,25 @@ li {
   border-right: 100px solid transparent;
 }
 
-.appeal-wrap__sub{
+.appeal-wrap__sub p{
   margin-top: 5%;
+  background-color: #fff;
 }
 
 .appeal-wrap__sub strong{
   color: #E99BC1;
+  font-size: clamp(1rem, 0.727rem + 1.36vw, 1.75rem);
 }
 
 .appeal-wrap__txt{
   display: flex;
+}
+
+.appeal-wrap__txt__right img{
+  width: 30%;
+}
+
+.__ttl{
+  font-size: clamp(1rem, 0.727rem + 1.36vw, 1.75rem);
+  font-weight: 700;
 }
