@@ -14,7 +14,7 @@ body {
   letter-spacing: 1px;
   word-break: break-all;
   background-color: #fff;
-  color: #666666;
+  color: #00213B;
 }
 
 a {
@@ -43,6 +43,7 @@ li {
 
 .header-wrap__logo {
   padding-left: 15%;
+  width: 35%;
 }
 
 .header-wrap__logo a {
@@ -66,7 +67,8 @@ li {
 /* clamp関数はウインドウサイズに対応してフォントサイズを調整できる関数 */
 
 .header-wrap__nav {
-  margin-right: 400px;
+  margin: auto;
+  width: 20%;
 }
 
 .header-wrap__nav a {
@@ -75,11 +77,10 @@ li {
 
 .header-wrap__nav__web {
   background-color: #E99BC1;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding: 0.75vw 5vw;
+  padding: 0.75vw 0;
   border-radius: 10px;
+  text-align: center;
+  display: block;
 }
 
 .header-wrap__nav__web a p {
@@ -102,8 +103,6 @@ li {
 .h-open small {
   display: inline-block;
   position: relative;
-  color: #00213B;
-  font-size: 0.5rem;
   top: 10px;
 }
 
@@ -196,4 +195,90 @@ li {
 
 #h-nav.panelactive {
   right: 0;
+}
+
+.top-wrap {
+  width: 100%;
+  padding-top: 90px;
+  background-size: cover;
+  position: relative;
+}
+
+.top-wrap img {
+  width: 100%;
+  height: 100%;
+}
+
+.top-wrap__sp {
+  display: none;
+}
+
+.top-wrap a{
+  position: absolute;
+  top: 83%;
+  left: 15.5%;
+  font-size: clamp(1rem, 0.818rem + 0.91vw, 1.5rem);
+  color: #fff;
+  background-color: #E99BC1;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1vw 1vw;
+}
+
+.appeal{
+  background-color: #F5F5F5;
+}
+
+.__inner {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.appeal-wrap__ttl{
+  display: flex;
+}
+
+.appeal-wrap__ttl h3{
+  font-size: clamp(1rem, 0.727rem + 1.36vw, 1.75rem);
+}
+
+.appeal-wrap__ttl__img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  margin-left: 50px;
+}
+
+.appeal-wrap__ttl__img img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+}
+
+.appeal-wrap__ttl ::after{
+  content: "";
+  position: absolute;
+  top: 65%;
+  left: 40%;
+  border-top: 50px solid #9CC9E5;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+}
+
+.appeal-wrap__sub{
+  margin-top: 5%;
+}
+
+.appeal-wrap__sub strong{
+  color: #E99BC1;
+}
+
+.appeal-wrap__txt{
+  display: flex;
 }
