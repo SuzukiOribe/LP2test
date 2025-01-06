@@ -232,7 +232,7 @@ li {
 .__inner {
   max-width: 800px;
   margin: 0 auto;
-  margin-top: 5%;
+  padding: 5%;
 }
 
 .appeal-wrap__ttl{
@@ -241,6 +241,17 @@ li {
 
 .appeal-wrap__ttl h3{
   font-size: clamp(1rem, 0.727rem + 1.36vw, 1.75rem);
+  position: relative;
+}
+
+.appeal-wrap__ttl h3::after {
+  content: "";
+  position: absolute;
+  top: 65%;
+  left: 40%;
+  border-top: 50px solid #9CC9E5;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
 }
 
 .appeal-wrap__ttl__img{
@@ -259,16 +270,6 @@ li {
   width: auto;
   height: 100%;
   object-fit: contain;
-}
-
-.appeal-wrap__ttl ::after{
-  content: "";
-  position: absolute;
-  top: 65%;
-  left: 40%;
-  border-top: 50px solid #9CC9E5;
-  border-left: 100px solid transparent;
-  border-right: 100px solid transparent;
 }
 
 .appeal-wrap__sub p{
