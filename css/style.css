@@ -211,7 +211,7 @@ li {
 }
 
 .top-wrap__sp {
-  display: none;
+  display: none !important;
 }
 
 .top-wrap a{
@@ -238,6 +238,7 @@ li {
 
 .appeal-wrap__ttl{
   display: flex;
+  justify-content: center;
 }
 
 .appeal-wrap__ttl h3{
@@ -256,12 +257,12 @@ li {
 }
 
 .appeal-wrap__ttl__img{
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   position: relative;
   overflow: hidden;
-  margin-left: 50px;
+  margin-left: 4%;
 }
 
 .appeal-wrap__ttl__img img{
@@ -274,18 +275,19 @@ li {
 }
 
 .appeal-wrap__sub{
-  width: 55%;
+  width: 70%;
   font-size: clamp(0.75rem, 0.477rem + 1.36vw, 1.5rem);
 }
 
 .appeal-wrap__sub p{
   margin-top: 5%;
   background-color: #fff;
+  padding: 2%;
 }
 
 .appeal-wrap__sub strong{
   color: #E99BC1;
-  font-size: clamp(1rem, 0.727rem + 1.36vw, 1.75rem);
+  font-size: clamp(1.5rem, 1.227rem + 1.36vw, 2.25rem);
 }
 
 .appeal-wrap__txt{
@@ -321,7 +323,7 @@ li {
 }
 
 .__ttl{
-  font-size: clamp(1rem, 0.727rem + 1.36vw, 1.75rem);
+  font-size: clamp(1.5rem, 1.227rem + 1.36vw, 2.25rem);
   font-weight: 700;
   text-align: center;
 }
@@ -343,12 +345,12 @@ li {
 }
 
 .fea-wrap__body__block__ttl h3{
-  font-size: clamp(1rem, 0.727rem + 1.36vw, 1.75rem);
+  font-size: clamp(1.5rem, 1.227rem + 1.36vw, 2.25rem);
   font-weight: 700;
 }
 
 .fea-wrap__body__block__ttl__sub p{
-  font-size: clamp(1rem, 0.727rem + 1.36vw, 1.75rem);
+  font-size: clamp(1.5rem, 1.227rem + 1.36vw, 2.25rem);
   padding: 3%;
 }
 
@@ -389,4 +391,145 @@ li {
   height: auto;
   object-fit: cover;
   margin-top: 2%;
+}
+
+.menu-wrap__body {
+  background-color: #fff;
+}
+
+.menu-wrap__body p {
+  text-align: center;
+  color: #9CC9E5;
+  margin-bottom: 2.5%;
+  font-size: clamp(1.75rem, 1.841rem + -0.45vw, 1.5rem);
+}
+
+.menu-wrap__body__block {
+  background-color: #fff;
+  box-shadow: 0px 3px 3px rgb(0 0 0 /25%);
+  padding: 0 0 7% 0;
+  margin: 10% 0;
+}
+
+.menu-wrap__body__block__ttl {
+  display: inline-block;
+  background-color: #9CC9E5;
+  padding: 1.5% 3.5%;
+  margin-bottom: 2.5%;
+}
+
+.menu-wrap__body__block__ttl span {
+  color: #fff;
+  font-weight: 400;
+  font-size: clamp(1.15rem, 1.023rem + 0.64vw, 1.5rem);
+}
+
+.menu-wrap__body__block__ttl p {
+  color: #fff;
+  font-size: clamp(0.5rem, 0.318rem + 0.91vw, 1rem);
+}
+
+.menu-wrap__body__block img {
+  /* aspect-ratio: 7/4; */
+  display: block;
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  object-fit: cover;
+  margin-bottom: 3.5%;
+}
+
+.menu-wrap__body__block__price{
+  display: flex;
+  font-size: clamp(2rem, 2rem + 0vw, 2rem);
+  color: #9CC9E5;
+  line-height: 2.5rem;
+  justify-content: center;
+}
+
+.menu-wrap__body__block__price__left {
+  font-size: clamp(3rem, 2.273rem + 3.64vw, 5rem);
+  font-weight: 700;
+  line-height: 90%;
+}
+
+.menu-wrap__body__block__price__right {
+  display: inline-block;
+  margin-left: 1%;
+  /* font-size: clamp(1rem, 0.818rem + 0.91vw, 1.5rem); */
+}
+
+.menu-wrap__body__block__price__right p{  
+  font-size: clamp(0.25rem, -0.023rem + 1.36vw, 1rem);
+}
+
+.menu-wrap__body__option__ttl{
+  background-color: #E99BC1;
+  color: #fff;
+  text-align: center;
+  line-height: 3rem;
+  font-size: clamp(1.15rem, 1.023rem + 0.64vw, 1.5rem);
+  margin-bottom: 3%;
+}
+
+
+.menu-wrap__body__option__list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-wrap__body__option__list__right{
+  width: 48%;
+}
+
+.menu-wrap__body__option__list__right__item{
+  display: flex;
+  align-items: center;
+  border-bottom: dotted 1.5px #00213B;
+  margin: 2%5%;
+}
+
+.menu-wrap__body__option__list__right__item small {
+  border: solid 1.5px #00213B;
+  color: #00213B;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(0.85rem, 0.795rem + 0.27vw, 1rem);
+  margin-right: 2.5%;
+}
+
+.menu-wrap__body__option__list__right__item p{
+  color: #00213B;
+  font-size: clamp(0.85rem, 0.795rem + 0.27vw, 1rem);
+}
+
+.menu-wrap__body__option__list__left {
+  width: 48%;
+}
+
+.menu-wrap__body__option__list__left__item {
+  display: flex;
+  align-items: center;
+  border-bottom: dotted 1.5px #00213B;
+  margin: 2% 5%;
+}
+
+.menu-wrap__body__option__list__left__item small{
+  border: solid 1.5px #00213B;
+  color: #00213B;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(0.85rem, 0.795rem + 0.27vw, 1rem);
+  margin-right: 2.5%;
+}
+
+.menu-wrap__body__option__list__left__item p {
+  color: #00213B;
+  font-size: clamp(0.85rem, 0.795rem + 0.27vw, 1rem);
 }
