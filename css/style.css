@@ -301,7 +301,7 @@ li {
 
 .appeal-wrap__txt__right{
   width: 45%;
-  aspect-ratio: 3/4;
+  /* aspect-ratio: 3/4; */
   margin-left: 3%;
 }
 
@@ -311,6 +311,8 @@ li {
   height: 50%;
   object-fit: cover;
   object-position: 50% 0;
+  aspect-ratio: 2/5;
+  width: 50%;
 }
 
 .appeal::after {
