@@ -307,11 +307,10 @@ li {
 
 .appeal-wrap__txt__right img{
   display: block;
-  width: 50%;
-  height: 50%;
+  height: 100%;
   object-fit: cover;
   object-position: 50% 0;
-  aspect-ratio: 2/5;
+  aspect-ratio: 1/1;
   width: 50%;
 }
 
@@ -364,7 +363,7 @@ li {
   height: 1px;
   background-color: #00213B;
   bottom: 1.5rem;
-  left: 8rem;
+  left: 6rem;
 }
 
 .fea-wrap__body__block__ttl::after{
@@ -377,14 +376,9 @@ li {
   bottom: 1.5rem;
   left: 24rem;
 }
-
-
+x
 .fea-wrap__body__block__ttl__sub{
   text-align: center;
-}
-
-.fea-wrap__body__block__txt{
-
 }
 
 .fea-wrap__body__block__img img{
@@ -534,4 +528,89 @@ li {
 .menu-wrap__body__option__list__left__item p {
   color: #00213B;
   font-size: clamp(0.85rem, 0.795rem + 0.27vw, 1rem);
+}
+
+.flow{
+  background-color: #9CC9E5;
+}
+
+.flow-wrap{
+  /* position: relative; */
+}
+
+.flow-wrap__body{
+  background-color: #fff;
+  padding: 5% 15%;
+  margin-top: 5%;
+}
+
+.flow-wrap__body__block{
+  position: relative;
+}
+
+.flow-wrap__body__block__ttl{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-50%) translateX(-50%);
+  background-color: #00213B;
+  border: solid 1.5px #fff;
+  padding: 0 1.5%;
+  text-align: center;
+}
+
+.flow-wrap__body__block__ttl h5{
+  font-size: clamp(1.25rem, 1.068rem + 0.91vw, 1.75rem);
+  font-weight: 400;
+  color: #fff;
+}
+
+.flow-wrap__body__block__sub {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.5%;
+}
+
+.flow-wrap__body__block__sub__img{
+  width: 65%;
+  aspect-ratio: 7/4;
+}
+
+.flow-wrap__body__block__sub__img img{
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flow-wrap__body__block__sub__txt{
+  width: 35%;
+  padding: 20px 0;
+}
+
+.flow-wrap__body__block__sub__txt h6{
+  font-size: clamp(1.75rem, 1.841rem + -0.45vw, 1.5rem);
+  line-height: 2;
+  font-weight: 500;
+  margin-top: 1.5%;
+  border-bottom: 4px dotted #00213B;
+  text-align: center;
+}
+
+.flow-wrap__body__block__sub__txt p{
+  margin-top: 5%;
+}
+
+.dli-chevron-down {
+  display: inline-block;
+  vertical-align: middle;
+  color: #00213B;
+  line-height: 1;
+  width: 2em;
+  height: 2em;
+  border: 0.1em solid currentColor;
+  border-left: 0;
+  border-bottom: 0;
+  box-sizing: border-box;
+  transform: translateY(50%) rotate(135deg);
+  margin: 5% 50% 10%;
 }
